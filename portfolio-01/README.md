@@ -8,7 +8,7 @@ Image/ Illustration References:
 Project Setup:
 
 - npm i framer-motion lucide-react next-themes react-countup react-icons swiper
-  npm i @radix-ui/react-icons
+- npm i @radix-ui/react-icons
 
 -Shadcn install
 
@@ -18,6 +18,12 @@ Project Setup:
   -React Hook Form
   -TextArea
   - Input
-    tabs
-    label
-    sheet
+    -tabs
+  - label
+  - sheet
+
+For Theme Toggle I used NextTheme
+
+- Make a ThemeProvider
+- Make a ThemeToggler Componenet
+  Tutorial - https://tutorend.com/tutorials/scroll-progress-bar-in-next-js-react
