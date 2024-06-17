@@ -23,9 +23,9 @@ const routes = [
 ];
 
 interface NavbarProps {
-  containerStyles: string;
-  linkStyles: string;
-  underlineStyles: string;
+  containerStyles?: string;
+  linkStyles?: string;
+  underlineStyles?: string;
 }
 
 const Navbar = ({
