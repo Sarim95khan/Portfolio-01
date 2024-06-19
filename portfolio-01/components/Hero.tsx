@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 xl:pt-28 h-[84vh] bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-24 xl:pt-28  xl:[840px] bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none mb-12 xl:mb-24">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
@@ -36,17 +36,19 @@ const Hero = () => {
 
             {/* Socials */}
             <Socials
-              containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              containerStyles="flex gap-x-6 mx-auto xl:mx-0 "
               iconStyles="text-foreground hover:text-primary text-[22px] transition-all"
             />
           </div>
 
           {/* image */}
-          <div className="hidden xl:flex relative"></div>
+          <div className="hidden xl:flex relative">
+            <div className="bg-hero_shape_02_light dark:bg-hero_shape_02_dark bg-no-repeat bg-cover w-[500px] h-[500px] absolute -top-1  -right-2" />
+          </div>
         </div>
 
         {/* icon  */}
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+        <div className="hidden xl:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
           <LuArrowDown className="text-3xl text-primary" />
         </div>
       </div>
